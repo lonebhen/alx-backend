@@ -47,9 +47,6 @@ class Server:
             next_index: index of the first item in the next page
             page_size: the current page size
             data: actual page of the dataset
-        Args:
-            index(int): first required index
-            page_size(int): required number of records per page
         """
         dataset = self.indexed_dataset()
         data_length = len(dataset)
