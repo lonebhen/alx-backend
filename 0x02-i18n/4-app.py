@@ -2,7 +2,7 @@
 
 
 from flask import Flask, request, render_template
-from babel import Babel
+from flask_babel import Babel
 
 app = Flask(__name__)
 babel = Babel(app)
