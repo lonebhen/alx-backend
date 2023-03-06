@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 
-''' Caching '''
+""" BaseCaching module
+"""
 
 BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """Basic Caching"""
+    """
+    Defines a class for caching information in key-value pairs
+    Methods:
+        put(key, item) - store a key-value pair
+        get(key) - retrieve the value associated with a key
+    """
 
     def put(self, key, item):
         """Put method"""
