@@ -6,6 +6,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """Basic Caching"""
 
     def put(self, key, item):
         """Put method"""
