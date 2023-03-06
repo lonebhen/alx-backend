@@ -25,7 +25,7 @@ class FIFOCache(BaseCaching):
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 items_descaded = self.key_indexes.pop(0)
                 del self.cache_data[items_descaded]
-                print("DESCADE:", items_descaded)
+                print("DISCARD:", items_descaded)
 
             self.cache_data[key] = item
             self.key_indexes.append(key)
