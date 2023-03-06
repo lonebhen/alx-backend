@@ -7,7 +7,7 @@
 BaseCaching = __import__('base_caching').BaseCaching
 
 
-class LIFOCaching(BaseCaching):
+class LIFOCache(BaseCaching):
     """LIFO Caching"""
 
     def __init__(self):
