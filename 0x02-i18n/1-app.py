@@ -23,7 +23,7 @@ class Config(object):
 app.config.from_object(Config)
 
 
-@app.route("/", methods=["GET"])
+@app.route("/", strict_slashes=False)
 def hello_world():
     """render template"""
     return render_template('1-index.html')
