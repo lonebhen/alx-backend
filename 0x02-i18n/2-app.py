@@ -28,6 +28,7 @@ def get_locale():
 
 @app.route("/", methods=['GET'], strict_slashes=False)
 def hello_world():
+    """Hello"""
     return render_template('2-index.html')
 
 
