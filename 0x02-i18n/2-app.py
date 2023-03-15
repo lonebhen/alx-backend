@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+"""
+    Languages
+"""
 
 from flask import Flask, request, render_template
 from flask_babel import Babel
