@@ -22,8 +22,9 @@ class Config(object):
 app.config.from_object(Config)
 
 
+@babel.localeselector
 def get_locale():
-    """locale"""
+    """best language"""
     loc = request.args.get('locale')
     if loc in app.config['LANGUAGES']:
         return loc
@@ -35,6 +36,7 @@ babel.init_app(app, locale_selector=get_locale)
 
 @app.route("/", methods=['GET'], strict_slashes=False)
 def hello_world():
+    """return template"""
     return render_template('4-index.html')
 
 
